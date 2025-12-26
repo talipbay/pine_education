@@ -1,17 +1,19 @@
 "use client";
 
+import { getImagePath } from "../../lib/image-path";
+
 const Partners = () => {
   const partners = [
-    { name: "Dogus", logo: "/partners/dogus.png" },
-    { name: "ISKU", logo: "/partners/isku.png" },
-    { name: "Matata", logo: "/partners/matata.png" },
-    { name: "Mozaik", logo: "/partners/mozaik.png" },
-    { name: "PHYWE", logo: "/partners/phywe.png" },
-    { name: "RoboBlockly", logo: "/partners/robobloq.png" },
-    { name: "Robolink", logo: "/partners/robolink.avif" },
-    { name: "Samsung", logo: "/partners/samsung.png" },
-    { name: "PASCO", logo: "/partners/pasco.png" },
-    { name: "Dr.Web", logo: "/partners/drweb.png" },
+    { name: "Dogus", logo: getImagePath("/partners/dogus.png") },
+    { name: "ISKU", logo: getImagePath("/partners/isku.png") },
+    { name: "Matata", logo: getImagePath("/partners/matata.png") },
+    { name: "Mozaik", logo: getImagePath("/partners/mozaik.png") },
+    { name: "PHYWE", logo: getImagePath("/partners/phywe.png") },
+    { name: "RoboBlockly", logo: getImagePath("/partners/robobloq.png") },
+    { name: "Robolink", logo: getImagePath("/partners/robolink.avif") },
+    { name: "Samsung", logo: getImagePath("/partners/samsung.png") },
+    { name: "PASCO", logo: getImagePath("/partners/pasco.png") },
+    { name: "Dr.Web", logo: getImagePath("/partners/drweb.png") },
   ];
 
   return (

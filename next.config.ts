@@ -13,7 +13,7 @@ const nextConfig: NextConfig = {
   ...(isProd &&
     isGitHubPages && {
       basePath: "/pine_education",
-      assetPrefix: "/pine_education",
+      assetPrefix: "/pine_education/",
     }),
 };
 

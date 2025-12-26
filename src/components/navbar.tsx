@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Search, ChevronDown, Menu, X } from "lucide-react";
 import { cn } from "../../lib/utils";
+import { getImagePath } from "../../lib/image-path";
 import Image from "next/image";
 
 const Navbar = () => {
@@ -33,7 +34,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="shrink-0">
             <Image
-              src="/logo.png"
+              src={getImagePath("/logo.png")}
               alt="Logo"
               width={120}
               height={40}

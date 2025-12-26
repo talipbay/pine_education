@@ -1,5 +1,7 @@
 "use client";
 
+import { getImagePath } from "../../lib/image-path";
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -14,7 +16,7 @@ const Footer = () => {
               <div className="lg:col-span-2">
                 <div className="mb-8">
                   <img
-                    src="/logo.png"
+                    src={getImagePath("/logo.png")}
                     alt="Pine Education"
                     className="h-12 w-auto mb-6 filter invert"
                   />
